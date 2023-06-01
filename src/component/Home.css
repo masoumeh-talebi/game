@@ -1,0 +1,74 @@
+.game-container {
+    background: brown;
+    /* height: 1000px; */
+}
+
+.game {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game-input {
+    text-align: center;
+    background: rgb(238, 227, 227);
+    padding: 50px 20px;
+    border-radius: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.game-input h3 {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: inline;
+    margin: 10px 0;
+}
+
+.result h3 {
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    color: burlywood;
+    background-color: blueviolet;
+}
+
+.game-word {
+    display: flex;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    justify-content: space-around;
+
+}
+
+.game-turn {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    margin: 20px;
+}
+
+.game-button {
+    text-align: center;
+}
+
+.game-button button {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 50px;
+    border: none;
+    margin: 20px 5px;
+    width: 58px;
+}
+
+.winStyle {
+    font-size: x-large;
+    color: green;
+    width: 150px;
+    padding: 5px;
+}

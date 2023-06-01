@@ -1,0 +1,17 @@
+.final-game-result {
+    background-color: #575537;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    padding: 30px;
+    margin: auto;
+    font-size: xx-large;
+}
+
+.won {
+    color: #157409;
+}
+
+.game-over {
+    color: #dd0303;
+}
