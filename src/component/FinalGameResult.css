@@ -1,5 +1,5 @@
 .final-game-result {
-    background-color: #575537;
+    background-color: #124411;
     border-radius: 5px;
     width: 90%;
     height: 90%;
@@ -9,9 +9,13 @@
 }
 
 .won {
-    color: #157409;
+    color: #cbffc4;
 }
 
 .game-over {
-    color: #dd0303;
+    color: #ff5252;
+}
+
+.final-game-result button{
+background-color: #cbffc4;
 }

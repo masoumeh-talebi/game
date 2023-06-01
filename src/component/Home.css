@@ -1,6 +1,6 @@
 .game-container {
     background: brown;
-    /* height: 1000px; */
+    height: calc(800px);
 }
 
 .game {
@@ -72,3 +72,14 @@
     width: 150px;
     padding: 5px;
 }
+
+.allGuessedWords{
+    color: #fff;
+    text-align: center;
+    background: #ffb048;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+

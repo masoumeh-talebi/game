@@ -70,10 +70,12 @@ function Home() {
         finalGameResult.isGameFinished ? <FinalGameResult result={finalGameResult.isUserWon} setStartAgain={startAgain} /> :
             <>
                 <div className='game-container'>
-                    <div>
+                    <div className='allGuessedWords'>
                         {allGuessedWords.map((x, index) => {
                             return <div key={index} >
-                                <div className={correctWords.find((x) => x === guessedUserWords || x === guessedRobotWords) ? 'winStyle' : ''}>{x}</div>
+                                <h3 className={correctWords.find((x) => x === guessedUserWords || x === guessedRobotWords) ? 'winStyle' : ''}>
+                                    {x}
+                                    </h3> 
                             </div>
                         })
                         }
