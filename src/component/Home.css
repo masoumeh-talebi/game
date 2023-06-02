@@ -1,6 +1,6 @@
 .game-container {
     background: brown;
-    height: calc(800px);
+    height: calc(1000px);
 }
 
 .game {
@@ -32,8 +32,8 @@
 .result h3 {
     margin: 20px 10px 20px 10px;
     padding: 20px;
-    color: burlywood;
-    background-color: blueviolet;
+    color: #FFB84C;
+    background-color: #863A6F;
 }
 
 .game-word {
@@ -76,7 +76,7 @@
 .allGuessedWords{
     color: #fff;
     text-align: center;
-    background: #ffb048;
+    background: #ffae36;
     width: 200px;
     margin: 0 auto;
     border-radius: 20px;

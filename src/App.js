@@ -1,12 +1,10 @@
-import Home from './component/Home';
+import Home from './component/Home'; 
 import './App.css';
 
-function App({handleClick}) {
+function App() {
   return (
     <div className="App">
-      
-      <Home />
-
+      <Home />     
     </div>
   );
 }

@@ -17,6 +17,8 @@ function Home() {
     const [guessedRobotWords, setGuessedRobotWords] = useState([]);
     const [allGuessedWords, setAllGuessedWords] = useState([]);
     const [robotRemainWords, setRobotRemainWords] = useState(robot.map(x => x));
+    const [seconds, setSeconds] = useState(0);
+    const [secondsOut, setSecondsOut] = useState();
     const [finalGameResult, setFinalGameResult] = useState({
         isGameFinished: false,
         isUserWon: false
@@ -27,6 +29,20 @@ function Home() {
             setWord((prev) => [...prev, letter]);
         }
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSeconds(seconds => seconds + 1);
+        }, 10);
+        if (setSeconds === 30000) {
+            return () => setTimeout(() => {
+                clearInterval(interval);
+                setSecondsOut(secondsOut)
+            }, 3000)
+        }
+    }, []);
+
+
 
     useEffect(() => {
         if (word.length === 5) {
@@ -75,7 +91,7 @@ function Home() {
                             return <div key={index} >
                                 <h3 className={correctWords.find((x) => x === guessedUserWords || x === guessedRobotWords) ? 'winStyle' : ''}>
                                     {x}
-                                    </h3> 
+                                </h3>
                             </div>
                         })
                         }
@@ -92,11 +108,13 @@ function Home() {
                     </div>
 
                     <div className='game-word'>
-                        <FaSmile size={50} color='green' />
+                        <FaSmile size={50} color='#F6FA70' />
                         <div className='game-turn'>
-                            <span>Your Turn</span>
+                            <span>Your Turn : {seconds}{secondsOut}
+
+                            </span>
                         </div>
-                        <FaSmile size={50} color='gray' />
+                        <FaSmile size={50} color='#00DFA2' />
                     </div>
 
                     <div className='game-button'>
