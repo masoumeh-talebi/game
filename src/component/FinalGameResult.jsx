@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGrinWink,FaGrimace } from "react-icons/fa";
+import { FaGrinWink, FaSadTear } from "react-icons/fa";
 import './FinalGameResult.css';
 
 export default function FinalGameResult({ result, setStartAgain }) {
@@ -16,11 +16,11 @@ export default function FinalGameResult({ result, setStartAgain }) {
 
             {result ?
                 <div className='won'> You won !!!
-                <FaGrinWink/>
+                    <FaGrinWink />
                 </div> :
-                <div className='game-over'> GameOver 
-                    <FaGrimace/>
-                 </div>
+                <div className='game-over'> GameOver
+                    <FaSadTear />
+                </div>
             }
 
             <button className='btn' onClick={startGame}>Try again</button>

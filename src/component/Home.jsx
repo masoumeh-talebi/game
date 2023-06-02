@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaSmile } from 'react-icons/fa'
+import { BsFillAirplaneFill } from "react-icons/bs";
 import './Home.css'
 import FinalGameResult from './FinalGameResult';
 
@@ -33,7 +34,7 @@ function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             setSeconds(seconds => seconds + 1);
-        }, 10);
+        }, 1000);
         if (setSeconds === 30000) {
             return () => setTimeout(() => {
                 clearInterval(interval);
@@ -111,7 +112,6 @@ function Home() {
                         <FaSmile size={50} color='#F6FA70' />
                         <div className='game-turn'>
                             <span>Your Turn : {seconds}{secondsOut}
-
                             </span>
                         </div>
                         <FaSmile size={50} color='#00DFA2' />
