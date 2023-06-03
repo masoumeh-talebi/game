@@ -80,8 +80,6 @@ function Home() {
         setGuessedUserWords([])
         setAllGuessedWords([]);
         setFinalGameResult(reset);
-        // guessedRobotWords([]);
-        // setGuessedUserWords([]);
     }
 
     return (
@@ -112,7 +110,7 @@ function Home() {
                     <div className='game-word'>
                         <FaSmile size={50} color='#F6FA70' />
                         <div className='game-turn'>
-                            <span>Your Turn : {seconds}{secondsOut}
+                            <span>Your Turn : {seconds}
                             </span>
                         </div>
                         <FaSmile size={50} color='#00DFA2' />
