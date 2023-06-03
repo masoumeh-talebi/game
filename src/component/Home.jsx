@@ -33,20 +33,19 @@ function Home() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setSeconds(seconds => seconds + 1);
-        }, 1000);
-        if (setSeconds === 30000) {
-            return () => setTimeout(() => {
-                clearInterval(interval);
-                setSecondsOut(secondsOut)
-            }, 3000)
-        }
-    }, []);
-
-
+           if(seconds <30){
+               setSeconds(seconds => seconds + 1);
+           } else{
+               clearInterval(interval);
+            }
+        },1000);
+        return () =>
+                clearInterval(interval);        
+    }, [seconds]);
 
     useEffect(() => {
         if (word.length === 5) {
+            setSeconds(0);
             setGuessedUserWords(word.join(''));
 
             if (robotRemainWords.length) {
