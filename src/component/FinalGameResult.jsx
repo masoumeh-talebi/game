@@ -4,7 +4,7 @@ import './FinalGameResult.css';
 
 export default function FinalGameResult({ result, setStartAgain }) {
 
-    function startGame() {
+    function startGame(reset) {
         setStartAgain({
             isGameFinished: false,
             isUserWon: false

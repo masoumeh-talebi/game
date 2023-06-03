@@ -76,9 +76,11 @@ function Home() {
 
     }, [word]);
 
-    function startAgain(res) {
-        setFinalGameResult(res);
+    function startAgain(reset) {
+        setGuessedRobotWords([]);
+        setGuessedUserWords([])
         setAllGuessedWords([]);
+        setFinalGameResult(reset);
         // guessedRobotWords([]);
         // setGuessedUserWords([]);
     }
